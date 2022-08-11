@@ -21,6 +21,15 @@ body h4{
     font-weight: 700;
     font-size: 16px;
 }
+.caixa-prato::-webkit-scrollbar{
+    display: none;
+}
+.caixa-bebida::-webkit-scrollbar{
+    display: none;
+}
+.caixa-sobremesa::-webkit-scrollbar{
+    display: none;
+}
 
 .topo{
     width: 100%;
@@ -118,8 +127,30 @@ body h4{
 .menu-inferior{
     width: 100%;
     height: 92px;
-    background-color: blueviolet;
+    background-color: white;
     display: flex;
     position: fixed;
     bottom: 0px;
+}
+
+.selec-fechar{
+    width: 100%;
+    height: 61px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    background: #CBCBCB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.selec-fechar > div{
+    width: 190px;
+
+}
+.selec-fechar p{
+    font-size: 20px;
+    color: white;
 }
