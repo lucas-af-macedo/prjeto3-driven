@@ -38,9 +38,86 @@ body h4{
     height: 92px;
 }
 
+.selec-prato{
+    margin-top: 123px;
+}
+.selec-prato h2{
+    margin-left: 19px;
+}
+.caixa-prato{
+    margin-top: 17px;
+    height: 216px;
+    overflow-x: scroll;
+    display: flex;
+}
+.prato{
+    width: 172px;
+    height: 216px;
+    margin-right: 16px;
+    border-radius: 9px;
+    background-color: blueviolet;
+    flex-shrink: 0;
+}
+.caixa-prato :nth-child(1){
+    margin-left: 19px;
+}
+
+
+
+.selec-bebida{
+    margin-top: 27px;
+}
+.selec-bebida h2{
+    margin-left: 19px;
+}
+.caixa-bebida{
+    margin-top: 17px;
+    height: 216px;
+    overflow-x: scroll;
+    display: flex;
+}
+.bebida{
+    width: 172px;
+    height: 216px;
+    margin-right: 16px;
+    border-radius: 9px;
+    background-color: blueviolet;
+    flex-shrink: 0;
+}
+.caixa-bebida :nth-child(1){
+    margin-left: 19px;
+}
+
+
+
+.selec-sobremesa{
+    margin-top: 27px;
+    margin-bottom: 108px;
+}
+.selec-sobremesa h2{
+    margin-left: 19px;
+}
+.caixa-sobremesa{
+    margin-top: 17px;
+    height: 216px;
+    overflow-x: scroll;
+    display: flex;
+}
+.sobremesa{
+    width: 172px;
+    height: 216px;
+    margin-right: 16px;
+    border-radius: 9px;
+    background-color: blueviolet;
+    flex-shrink: 0;
+}
+.caixa-sobremesa :nth-child(1){
+    margin-left: 19px;
+}
+
 .menu-inferior{
     width: 100%;
-    height: 50px;
+    height: 92px;
     background-color: blueviolet;
     display: flex;
     position: fixed;
