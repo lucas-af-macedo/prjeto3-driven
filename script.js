@@ -1,43 +1,26 @@
-function marcarprato(numero){
-    const elemento=document.querySelector('.caixa-prato .prato-selecionadof');
-    const icone=document.querySelector('.caixa-prato .prato-selecionadof .icone');
+function marcarprato(numero,caminho,item){
+    const elemento=document.querySelector(caminho);
     if (elemento!==null){
-        elemento.classList.remove('prato-selecionadof');
+        const icone=elemento.querySelector('.icone');
+        elemento.classList.remove(item);
         icone.classList.add('desaparecer');
-
     }
-    const icone2=document.querySelector('.caixa-prato '+numero+' .icone');
-    const elemento2=document.querySelector(numero);
-    console.log(elemento2);
-    elemento2.classList.add('prato-selecionadof');
+    const icone2=numero.querySelector('.icone');
+    numero.classList.add(item);
     icone2.classList.remove('desaparecer');
+    teste(item);
 }
-function marcarbebida(numero){
-    const elemento=document.querySelector('.caixa-bebida .bebida-selecionadof');
-    const icone=document.querySelector('.caixa-bebida .bebida-selecionadof .icone');
-    if (elemento!==null){
-        elemento.classList.remove('bebida-selecionadof');
-        icone.classList.add('desaparecer');
-
+function teste(item){
+    if (document.querySelector('.prato-selecionadof') !== null && document.querySelector('.bebida-selecionadof') !== null && document.querySelector('.sobremesa-selecionadof')!==null){
+        const botao=document.querySelector('.selec-fechar');
+        botao.classList.add('verde');
+        botao.querySelector('.pinit').classList.add('desaparecer');
+        botao.querySelector('.pfin').classList.remove('desaparecer');
+        botao.setAttribute('onclick','cancelar()');
     }
-    const icone2=document.querySelector('.caixa-bebida '+numero+' .icone');
-    const elemento2=document.querySelector(numero);
-    console.log(elemento2);
-    elemento2.classList.add('bebida-selecionadof');
-    icone2.classList.remove('desaparecer');
 }
-
-function marcarsobremesa(numero){
-    const elemento=document.querySelector('.caixa-sobremesa .sobremesa-selecionadof');
-    const icone=document.querySelector('.caixa-sobremesa .sobremesa-selecionadof .icone');
-    if (elemento!==null){
-        elemento.classList.remove('sobremesa-selecionadof');
-        icone.classList.add('desaparecer');
-
-    }
-    const icone2=document.querySelector('.caixa-sobremesa '+numero+' .icone');
-    const elemento2=document.querySelector(numero);
-    console.log(elemento2);
-    elemento2.classList.add('sobremesa-selecionadof');
-    icone2.classList.remove('desaparecer');
+function cancelar(){
+    const menu=document.querySelector('.menu-fechamento');
+    menu.classList.toggle('desaparecer');
+    menu.classList.toggle('flex');
 }
