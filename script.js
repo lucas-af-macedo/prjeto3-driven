@@ -17,6 +17,10 @@ function teste(item){
         botao.querySelector('.pinit').classList.add('desaparecer');
         botao.querySelector('.pfin').classList.remove('desaparecer');
         botao.setAttribute('onclick','cancelar()');
+        let oi4=Number(document.querySelector('.prato-selecionadof p').innerText.slice(3,).replace(',','.'))+Number(document.querySelector('.bebida-selecionadof p').innerText.slice(3,).replace(',','.'))+Number(document.querySelector('.sobremesa-selecionadof p').innerText.slice(3,).replace(',','.'));
+        console.log(oi4);
+        oi4=oi4.toFixed(2).replace('.',',');
+        document.querySelector('.valor-total').innerHTML='R$ '+oi4;
     }
 }
 function cancelar(){
@@ -24,3 +28,4 @@ function cancelar(){
     menu.classList.toggle('desaparecer');
     menu.classList.toggle('flex');
 }
+/*let oi4=oi.innerText.slice(4,).replace(',','.');*/
