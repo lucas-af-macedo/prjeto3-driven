@@ -13,15 +13,15 @@
   <body>
     <div class="menu-fechamento desaparecer"><div class="fechamento">
       <p class="confirme">Confirme seu pedido</p>
-      <div><p>Prato</p>
-      <p>0,00</p></div>
-      <div><p>Bebida</p>
-      <p>0,00</p></div>
-      <div><p>Sobremesa</p>
-      <p>0,00</p></div>
+      <div><p class="item1">Prato</p>
+      <p class="valor1">0,00</p></div>
+      <div><p class="item2">Bebida</p>
+      <p class="valor2">0,00</p></div>
+      <div><p class="item3">Sobremesa</p>
+      <p class="valor3">0,00</p></div>
       <div class="preco-total-final"><p>TOTAL</p>
       <p class="valor-total">R$ 0,00</p></div>
-      <button class="tudo-certo">Tudo certo, pode pedir!</button>
+      <button class="tudo-certo" onclick="fechar()">Tudo certo, pode pedir!</button>
       <p class="cancel" onclick="cancelar()">Cancelar</p>
     </div></div>
     <div class="topo">
@@ -34,30 +34,30 @@
       <h2>Primeiro seu prato</h2>
       <div class="caixa-prato">
         <div class="produto p1 prato" onclick="marcarprato(this,'.caixa-prato .prato-selecionadof','prato-selecionadof')"><div class="produto-caixa1 produt"><img src="frango_yin_yang 1.png"/><h5>Frango Yin Yang</h5><h6>Um pouco de batata, Um pouco de salada</h6><p>R$ 14,90</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
-        <div class="produto p2 prato" onclick="marcarprato(this,'.caixa-prato .prato-selecionadof','prato-selecionadof')"><div class="produto-caixa1 produt"><img src="frango_yin_yang 1.png"/><h5>Frango Yin Yang</h5><h6>Um pouco de batata, Um pouco de salada</h6><p>R$ 14,90</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
-        <div class="produto p3 prato" onclick="marcarprato(this,'.caixa-prato .prato-selecionadof','prato-selecionadof')"><div class="produto-caixa1 produt"><img src="frango_yin_yang 1.png"/><h5>Frango Yin Yang</h5><h6>Um pouco de batata, Um pouco de salada</h6><p>R$ 14,90</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
-        <div class="produto p4 prato" onclick="marcarprato(this,'.caixa-prato .prato-selecionadof','prato-selecionadof')"><div class="produto-caixa1 produt"><img src="frango_yin_yang 1.png"/><h5>Frango Yin Yang</h5><h6>Um pouco de batata, Um pouco de salada</h6><p>R$ 14,90</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
-        <div class="produto p5 prato" onclick="marcarprato(this,'.caixa-prato .prato-selecionadof','prato-selecionadof')"><div class="produto-caixa1 produt"><img src="frango_yin_yang 1.png"/><h5>Frango Yin Yang</h5><h6>Um pouco de batata, Um pouco de salada</h6><p>R$ 14,90</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
+        <div class="produto p2 prato" onclick="marcarprato(this,'.caixa-prato .prato-selecionadof','prato-selecionadof')"><div class="produto-caixa1 produt"><img src="frango_yin_yang 1.png"/><h5>Frango Yin Yang</h5><h6>Um pouco de batata, Um pouco de salada</h6><p>R$ 13,99</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
+        <div class="produto p3 prato" onclick="marcarprato(this,'.caixa-prato .prato-selecionadof','prato-selecionadof')"><div class="produto-caixa1 produt"><img src="frango_yin_yang 1.png"/><h5>Frango Yin Yang</h5><h6>Um pouco de batata, Um pouco de salada</h6><p>R$ 12,00</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
+        <div class="produto p4 prato" onclick="marcarprato(this,'.caixa-prato .prato-selecionadof','prato-selecionadof')"><div class="produto-caixa1 produt"><img src="frango_yin_yang 1.png"/><h5>Frango Yin Yang</h5><h6>Um pouco de batata, Um pouco de salada</h6><p>R$ 9,99</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
+        <div class="produto p5 prato" onclick="marcarprato(this,'.caixa-prato .prato-selecionadof','prato-selecionadof')"><div class="produto-caixa1 produt"><img src="frango_yin_yang 1.png"/><h5>Frango Yin Yang</h5><h6>Um pouco de batata, Um pouco de salada</h6><p>R$ 15,20</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
       </div>
     </div>
     <div class="selec-bebida">
       <h2>Agora, sua bebida</h2>
       <div class="caixa-bebida">
-        <div class="produto b1 bebida" onclick="marcarprato(this,'.caixa-bebida .bebida-selecionadof','bebida-selecionadof')"><div class="produto-caixa2 produt"><img src="frango_yin_yang 1.png"/><h5>Frango Yin Yang</h5><h6>Um pouco de batata</h6><p>R$ 14,90</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
-        <div class="produto b2 bebida" onclick="marcarprato(this,'.caixa-bebida .bebida-selecionadof','bebida-selecionadof')"><div class="produto-caixa2 produt"><img src="frango_yin_yang 1.png"/><h5>Frango Yin Yang</h5><h6>Um pouco de batata</h6><p>R$ 14,90</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
-        <div class="produto b3 bebida" onclick="marcarprato(this,'.caixa-bebida .bebida-selecionadof','bebida-selecionadof')"><div class="produto-caixa2 produt"><img src="frango_yin_yang 1.png"/><h5>Frango Yin Yang</h5><h6>Um pouco de batata</h6><p>R$ 14,90</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
-        <div class="produto b4 bebida" onclick="marcarprato(this,'.caixa-bebida .bebida-selecionadof','bebida-selecionadof')"><div class="produto-caixa2 produt"><img src="frango_yin_yang 1.png"/><h5>Frango Yin Yang</h5><h6>Um pouco de batata</h6><p>R$ 14,90</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
-        <div class="produto b5 bebida" onclick="marcarprato(this,'.caixa-bebida .bebida-selecionadof','bebida-selecionadof')"><div class="produto-caixa2 produt"><img src="frango_yin_yang 1.png"/><h5>Frango Yin Yang</h5><h6>Um pouco de batata</h6><p>R$ 14,90</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
+        <div class="produto b1 bebida" onclick="marcarprato(this,'.caixa-bebida .bebida-selecionadof','bebida-selecionadof')"><div class="produto-caixa2 produt"><img src="coquinha_gelada 1.png"/><h5>Coquinha gelada</h5><h6>Lata 350ml</h6><p>R$ 4,90</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
+        <div class="produto b2 bebida" onclick="marcarprato(this,'.caixa-bebida .bebida-selecionadof','bebida-selecionadof')"><div class="produto-caixa2 produt"><img src="coquinha_gelada 1.png"/><h5>Coquinha gelada</h5><h6>Lata 350ml</h6><p>R$ 5,50</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
+        <div class="produto b3 bebida" onclick="marcarprato(this,'.caixa-bebida .bebida-selecionadof','bebida-selecionadof')"><div class="produto-caixa2 produt"><img src="coquinha_gelada 1.png"/><h5>Coquinha gelada</h5><h6>Lata 350ml</h6><p>R$ 3,79</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
+        <div class="produto b4 bebida" onclick="marcarprato(this,'.caixa-bebida .bebida-selecionadof','bebida-selecionadof')"><div class="produto-caixa2 produt"><img src="coquinha_gelada 1.png"/><h5>Coquinha gelada</h5><h6>Lata 350ml</h6><p>R$ 5,55</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
+        <div class="produto b5 bebida" onclick="marcarprato(this,'.caixa-bebida .bebida-selecionadof','bebida-selecionadof')"><div class="produto-caixa2 produt"><img src="coquinha_gelada 1.png"/><h5>Coquinha gelada</h5><h6>Lata 350ml</h6><p>R$ 4,70</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
       </div>
     </div>
     <div class="selec-sobremesa">
       <h2>Por fim, sua sobremesa</h2>
       <div class="caixa-sobremesa">
-        <div class="produto s1 sobremesa" onclick="marcarprato(this,'.caixa-sobremesa .sobremesa-selecionadof','sobremesa-selecionadof')"><div class="produto-caixa2 produt"><img src="frango_yin_yang 1.png"/><h5>Frango Yin Yang</h5><h6>Um pouco de batata</h6><p>R$ 14,90</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
-        <div class="produto s2 sobremesa" onclick="marcarprato(this,'.caixa-sobremesa .sobremesa-selecionadof','sobremesa-selecionadof')"><div class="produto-caixa2 produt"><img src="frango_yin_yang 1.png"/><h5>Frango Yin Yang</h5><h6>Um pouco de batata</h6><p>R$ 14,90</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
-        <div class="produto s3 sobremesa" onclick="marcarprato(this,'.caixa-sobremesa .sobremesa-selecionadof','sobremesa-selecionadof')"><div class="produto-caixa2 produt"><img src="frango_yin_yang 1.png"/><h5>Frango Yin Yang</h5><h6>Um pouco de batata</h6><p>R$ 14,90</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
-        <div class="produto s4 sobremesa" onclick="marcarprato(this,'.caixa-sobremesa .sobremesa-selecionadof','sobremesa-selecionadof')"><div class="produto-caixa2 produt"><img src="frango_yin_yang 1.png"/><h5>Frango Yin Yang</h5><h6>Um pouco de batata</h6><p>R$ 14,90</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
-        <div class="produto s5 sobremesa" onclick="marcarprato(this,'.caixa-sobremesa .sobremesa-selecionadof','sobremesa-selecionadof')"><div class="produto-caixa2 produt"><img src="frango_yin_yang 1.png"/><h5>Frango Yin Yang</h5><h6>Um pouco de batata</h6><p>R$ 14,90</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
+        <div class="produto s1 sobremesa" onclick="marcarprato(this,'.caixa-sobremesa .sobremesa-selecionadof','sobremesa-selecionadof')"><div class="produto-caixa2 produt"><img src="pudim 2.png"/><h5>Pudim</h5><h6>Apenas pudim</h6><p>R$ 7,90</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
+        <div class="produto s2 sobremesa" onclick="marcarprato(this,'.caixa-sobremesa .sobremesa-selecionadof','sobremesa-selecionadof')"><div class="produto-caixa2 produt"><img src="pudim 2.png"/><h5>Pudim</h5><h6>Apenas pudim</h6><p>R$ 6,90</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
+        <div class="produto s3 sobremesa" onclick="marcarprato(this,'.caixa-sobremesa .sobremesa-selecionadof','sobremesa-selecionadof')"><div class="produto-caixa2 produt"><img src="pudim 2.png"/><h5>Pudim</h5><h6>Apenas pudim</h6><p>R$ 8,90</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
+        <div class="produto s4 sobremesa" onclick="marcarprato(this,'.caixa-sobremesa .sobremesa-selecionadof','sobremesa-selecionadof')"><div class="produto-caixa2 produt"><img src="pudim 2.png"/><h5>Pudim</h5><h6>Apenas pudim</h6><p>R$ 7,30</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
+        <div class="produto s5 sobremesa" onclick="marcarprato(this,'.caixa-sobremesa .sobremesa-selecionadof','sobremesa-selecionadof')"><div class="produto-caixa2 produt"><img src="pudim 2.png"/><h5>Pudim</h5><h6>Apenas pudim</h6><p>R$ 5,29</p></div><img class="icone desaparecer" src="Vector (1).png" alt=""></div>
       </div>
     </div>
     <div class="menu-inferior">
